@@ -14,11 +14,11 @@ require('dotenv').config();
 app.use(express.json());
 app.use(cookieParser());
 
-// const corsOptions = {
-//     credentials: true,
-//     origin: 'https://vitaliikutsenko.github.io/openlayers_client/',
-// };
-// app.use(cors(corsOptions));
+const corsOptions = {
+    credentials: true,
+    origin: 'https://vitaliikutsenko.github.io/openlayers_client/',
+};
+app.use(cors(corsOptions));
 
 app.use('/api', router);
 // RUN SERVER
