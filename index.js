@@ -16,7 +16,9 @@ app.use(cookieParser());
 
 const corsOptions = {
     credentials: true,
-    origin: 'https://vitaliikutsenko.github.io',
+    // origin: 'https://vitaliikutsenko.github.io',
+    origin: 'http://localhost:4000',
+
 };
 app.use(cors(corsOptions));
 

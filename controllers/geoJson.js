@@ -19,7 +19,7 @@ const geoJsonControllers = {
         },
         async geoJsonInfo(req, res, next) {
             try {
-                const { id } = await req.query;
+                const {id} = await req.params;
                 const info = await getGeoInfo({ id });
                 res.setHeader('Access-Control-Allow-Origin', '*');
                 res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
