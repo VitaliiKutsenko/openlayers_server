@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 const corsOptions = {
     credentials: true,
-    origin: 'https://vitaliikutsenko.github.io/openlayers_client/',
+    origin: 'https://vitaliikutsenko.github.io',
 };
 app.use(cors(corsOptions));
 
